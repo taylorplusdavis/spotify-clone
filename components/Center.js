@@ -52,12 +52,10 @@ function Center() {
         <div className="flex bg-black justify-center items-center space-x-2 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2 ">
           <div className="image-container relative w-12 h-12">
             {session?.user.image ? (
-              <Image
-                priority
-                className="rounded-full"
+              <img
+                className="rounded-full object-contain"
                 src={session?.user.image}
                 alt="profile picture"
-                layout="fill"
               />
             ) : null}
           </div>
