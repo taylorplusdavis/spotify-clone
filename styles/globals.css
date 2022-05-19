@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .listItemContainer {
+    @apply flex items-center text-neutral-600 hover:text-neutral-100 cursor-pointer transition-all duration-100 ease-out;
+  }
+  .listItemIcon {
+    @apply h-6 mr-2;
+  }
+  .listItemText {
+    @apply font-semibold text-xs md:text-sm;
+  }
+
+  .button {
+    @apply w-5 h-5 cursor-pointer hover:scale-125 transition-all duration-100 ease-in-out;
+  }
+}
